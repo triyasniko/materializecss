@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Latihan Materialize</title>
     <link rel="stylesheet" href="css/materialize.css">
-    <!-- <link href="css/icon.css" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/icon.css" rel="stylesheet">
     <style>
         .col>div{
             background-color: #6bc3dd;
             height: 120px;
+        }
+        nav .badge{
+            position: relative;
+            top: 20px;
+            right: 25px;
         }
     </style>
 </head>
@@ -27,6 +31,14 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#" class="btn-floating indigo darken-3 z-depth-0">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+                <li>
+                    <span class="badge white-text pink new">5</span>
+                </li>
             </ul>
         </div>
     </nav>
