@@ -16,85 +16,28 @@
     </style>
 </head>
 <body>
-    <nav class="nav-wrapper indigo">
-        <div class="container">
-            <a href="#" class="brand-logo">Site title</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" class="btn-floating indigo darken-3 z-depth-0">
-                        <i class="material-icons">notifications</i>
-                    </a>
-                </li>
-                <li>
-                    <span class="badge white-text pink new">5</span>
-                </li>
-            </ul>
+      <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
         </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-
-    <div class="container">
-        <div class="row">
-            <div class="col m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/img.jpg" alt="">
-                        <a href="#" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Hello world</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Assumenda, nesciunt distinctio? Error, suscipit. </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">View</a>
-                        <a href="#">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/img.jpg" alt="">
-                        <a href="#" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Hello world</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Assumenda, nesciunt distinctio? Error, suscipit. </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">View</a>
-                        <a href="#">Details</a>
-                    </div>
-                </div>
-            </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/materialize.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
+         $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
         });
+       
     </script>
 </body>
 </html>
