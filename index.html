@@ -7,17 +7,23 @@
     <title>Latihan Materialize</title>
     <link rel="stylesheet" href="css/materialize.css">
     <link href="css/icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <style>
-        nav .badge{
-            position: relative;
-            top: 20px;
-            right: 25px;
+        header{
+            background: url('img/img-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 500px;
         }
     </style>
 </head>
 <body>
-      <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+    <header>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore modi sunt aut dolorum tenetur ad illo maxime et in obcaecati.
+    </header>
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
@@ -26,18 +32,18 @@
         <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>
-
+          
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script>
-         $(document).ready(function(){
+        $(document).ready(function(){
             // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
             $('.modal').modal();
         });
-       
+    
     </script>
 </body>
 </html>
