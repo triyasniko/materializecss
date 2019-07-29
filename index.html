@@ -16,32 +16,235 @@
             background-position: center;
             min-height: 500px;
         }
+        section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator {
+            background-color: #1a273e;
+        }
+        .tabs .tab a:focus, .tab .tab a:focus.active{
+            background: rgba(255, 255, 255,0.0) !important;
+        }
+        @media screen and (max-width:670px){
+            header{
+                min-height: 400px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore modi sunt aut dolorum tenetur ad illo maxime et in obcaecati.
-    </header>
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        <nav class="nav-wrapper transparent">
+            <a href="#" class="brand-logo">triyasniko</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <div class="container">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Photo's</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="This is Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Photo's</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/thumbnail-1.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="indigo-text text-darken-4">User experience</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quibusdam recusandae sit velit ipsum voluptas? 
+                    Exercitationem laborum accusamus magni libero nemo!</p>
+            </div>
         </div>
-        <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/thumbnail-2.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h4 class="indigo-text text-darken-4">Social media</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quibusdam recusandae sit velit ipsum voluptas? 
+                    Exercitationem laborum accusamus magni libero nemo!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/thumbnail-3.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h4 class="indigo-text text-darken-4">Branding</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quibusdam recusandae sit velit ipsum voluptas? 
+                    Exercitationem laborum accusamus magni libero nemo!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/city.jpg" alt="" class="responsive-img">
         </div>
     </div>
+
+    <div class="container section scrollspy" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h3 class="indigo-text text-darken-4">What I do..</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Exercitationem explicabo rerum placeat temporibus 
+                    incidunt est corporis accusantium doloremque possimus sequi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium, illum beatae earum maiores magni illo aperiam 
+                    qui consectetur natus accusamus.</p>
+            </div>
+            <div class="col s12 m6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="indigo-text text-darken-4">Photography</a>>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="indigo-text text-darken-4">Editing</a>>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">Photography</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eaque magnam quae quaerat eveniet animi quasi!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quis cum dolores eius voluptatum. Deserunt, voluptate.</p>
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">Editing</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eaque magnam quae quaerat eveniet animi quasi!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Quis cum dolores eius voluptatum. Deserunt, voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/street2.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h3 class="indigo-text text-darken-4">Get in Touch</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Est architecto quisquam sunt optio voluptate! Minima praesentium 
+                    asperiores consequatur ratione corrupti esse suscipit porro repellat velit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Est architecto quisquam sunt optio voluptate! Minima praesentium 
+                    asperiores consequatur ratione corrupti esse suscipit porro repellat velit.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="#">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="datepicker" id="date">
+                        <label for="date">Choose a date you need me for..</label>
+                    </div>
+                    <div class="input-fields">
+                        <p>Services required..</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptates minima magni earum praesentium sapiente, 
+                        hic ab eos dolorum enim quos officia 
+                        perspiciatis magnam quis in quo architecto tempore, et amet?</p>
+                </div>
+                <div class="col s12 l4">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy;triyasniko</div>
+        </div>
+    </footer>
           
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
-            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-            $('.modal').modal();
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends:true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
         });
     
     </script>
